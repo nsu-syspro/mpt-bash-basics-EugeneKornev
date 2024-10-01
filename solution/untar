@@ -1,0 +1,7 @@
+#! /bin/bash
+
+input=$"$1"
+directory=$"$input.unpacked"
+rm -rf $"$directory"
+mkdir $"$directory"
+tar -xf $"$input" -C $"$directory"
