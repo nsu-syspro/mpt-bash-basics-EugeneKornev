@@ -1,0 +1,5 @@
+#! /bin/bash
+
+for ((i = 2; i <= $#; i++)); do
+  mv $"${!i}" $"${!i}$1"
+done
